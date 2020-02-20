@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutHistoriqueController">
+   <children>
+      <Label layoutX="97.0" layoutY="97.0" prefHeight="21.0" prefWidth="82.0" text="Operation" />
+      <Label layoutX="86.0" layoutY="154.0" text="Equipement" />
+      <Label layoutX="126.0" layoutY="208.0" text="Qte" />
+      <TextField fx:id="qte" layoutX="196.0" layoutY="203.0" prefHeight="31.0" prefWidth="161.0" />
+      <ComboBox fx:id="operationc" layoutX="196.0" layoutY="92.0" onAction="#operationc" prefHeight="31.0" prefWidth="161.0" />
+      <Button fx:id="annuler" layoutX="146.0" layoutY="348.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+      <Button fx:id="valider" layoutX="324.0" layoutY="348.0" mnemonicParsing="false" onAction="#valider" text="Valider" />
+      <Label layoutX="125.0" layoutY="258.0" prefHeight="21.0" prefWidth="82.0" text="Id_m" />
+      <Label layoutX="133.0" layoutY="309.0" text="Id_v" />
+      <TextField fx:id="id_v" layoutX="197.0" layoutY="304.0" prefHeight="31.0" prefWidth="153.0" />
+      <TextField fx:id="id_m" layoutX="193.0" layoutY="253.0" prefHeight="31.0" prefWidth="161.0" />
+      <ComboBox fx:id="equipementc" layoutX="196.0" layoutY="149.0" onAction="#equipementc" prefHeight="31.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>
