@@ -5,17 +5,40 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="GUI.ModifierMaterielsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8ba2e7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifierMaterielsController">
    <children>
-      <Label layoutX="81.0" layoutY="34.0" prefHeight="21.0" prefWidth="67.0" text="Nom" />
-      <Label layoutX="92.0" layoutY="104.0" text="Qte" />
-      <Label layoutX="91.0" layoutY="202.0" text="Etat" />
-      <TextField fx:id="nom" layoutX="186.0" layoutY="29.0" />
-      <TextField fx:id="Qte" layoutX="186.0" layoutY="99.0" />
-      <ComboBox fx:id="etatc" layoutX="190.0" layoutY="197.0" onAction="#etatc" prefHeight="31.0" prefWidth="161.0" />
-      <Button fx:id="annuler" layoutX="199.0" layoutY="297.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
-      <Button fx:id="confirmer" layoutX="294.0" layoutY="297.0" mnemonicParsing="false" onAction="#confirmer" text="Confirmer" />
+      <Label layoutX="123.0" layoutY="34.0" prefHeight="21.0" prefWidth="67.0" text="Nom ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="128.0" layoutY="110.0" text="Qte">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="127.0" layoutY="202.0" text="Etat ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nom" layoutX="229.0" layoutY="29.0" prefHeight="31.0" prefWidth="204.0" />
+      <TextField fx:id="Qte" layoutX="229.0" layoutY="105.0" prefHeight="31.0" prefWidth="204.0" />
+      <ComboBox fx:id="etatc" layoutX="230.0" layoutY="197.0" onAction="#etatc" prefHeight="31.0" prefWidth="204.0" />
+      <Button fx:id="annuler" layoutX="184.0" layoutY="297.0" mnemonicParsing="false" onAction="#annuler" prefHeight="31.0" prefWidth="113.0" text="Annuler" />
+      <Button fx:id="confirmer" layoutX="339.0" layoutY="297.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="31.0" prefWidth="113.0" text="Confirmer" />
+      <AnchorPane fx:id="invalid" layoutX="131.0" layoutY="166.0" prefHeight="153.0" prefWidth="317.0" style="-fx-background-color: #34495E;" visible="false">
+         <children>
+            <Button fx:id="oker" layoutX="150.0" layoutY="108.0" mnemonicParsing="false" onAction="#oker" text="Ok">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="invalidtext" layoutX="50.0" layoutY="56.0" prefHeight="21.0" prefWidth="216.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
